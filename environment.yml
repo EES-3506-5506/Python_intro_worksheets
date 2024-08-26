@@ -1,3 +1,5 @@
+%conda update -n base -c conda-forge --all
+
 name: example-environment
 channels:
   - conda-forge
@@ -37,50 +39,50 @@ dependencies:
 ## conda-forge channel
 
 # dependencies:
-#  - python=3.10    # Python version 3.9
-#  - cmocean       # Oceanography colormaps
-#  - cartopy
-#  - cftime
+ - python   # Python version 3.9
+ - cmocean       # Oceanography colormaps
+ - cartopy
+ - cftime
 #  - dask          # Parallel processing library
 #  - dask-jobqueue # Deploy dask on job queue systems
 #  - dask-labextension
 #  - datashader
- # - gcsfs         # Google Cloud Service
- # - gsw           # TEOS-10 seawater library
+ - gcsfs         # Google Cloud Service
+ - gsw           # TEOS-10 seawater library
  # - holoviews
- # - ipykernel
- # - ipython       # IPython interpreter and tools
- # - jupyter       # Jupyter federation architecture
- # - jupyterlab
- # - jupyterlab-git
- # - jupyter-server-proxy
- # - matplotlib   # 2D plotting library
- # - nc-time-axis
- # - netcdf4       # Wrapper for netcdf4
- # - nodejs
- # - numpy=1.23.5         # N-d array and numerics
+ - ipykernel
+ - ipython       # IPython interpreter and tools
+ - jupyter       # Jupyter federation architecture
+ - jupyterlab
+ - jupyterlab-git
+ - jupyter-server-proxy
+ - matplotlib   # 2D plotting library
+ - nc-time-axis
+ - netcdf4       # Wrapper for netcdf4
+ - nodejs
+ - numpy=1.23.5         # N-d array and numerics
  # - ocetrac
- # - pandas        # Labeled array library
+ - pandas        # Labeled array library
  # - pytest
- # - scipy         # Common math/stats/science functions
+ - scipy         # Common math/stats/science functions
  # - s3fs
- # - xarray        # N-d labeled array library
- # - xhistogram
- # - zarr
+ - xarray        # N-d labeled array library
+ - xhistogram
+ - zarr
  # - pip
- # - xesmf # intentionally added before xgcm in order to preserve certain package versions
- # - xmovie # used to make animations with xarray
- # - regionmask 
- # - numba
- # - sparse
- # - shapely
- # - cf_xarray
+ - xesmf # intentionally added before xgcm in order to preserve certain package versions
+ - xmovie # used to make animations with xarray
+ - regionmask 
+ - numba
+ - sparse
+ - shapely
+ - cf_xarray
  # - xgcm=0.8.1
  # - msys2::m2-base ## alows usage of Unix-based commands with Anaconda on Window
- # - mamba
- # - pip:
- #   - momlevel
- #   - cmip-basins
- #   - xoverturning # calculating overturning circulation budgets
- #   - wocemaps # World Ocean Circulation Experiment colormaps from Megan Siwak and Emma Holtzman
- #     # ignore for now - xgcm==0.6.0
+  - mamba
+ - pip:
+   - momlevel
+   - cmip-basins
+#   - xoverturning # calculating overturning circulation budgets
+   - wocemaps # World Ocean Circulation Experiment colormaps from Megan Siwak and Emma Holtzman
+     # ignore for now - xgcm==0.6.0
