@@ -22,7 +22,7 @@ channels:
 ## conda-forge channel
 
 dependencies:
- - python    # Python version 3.9
+ - python=3.10    # Python version 3.9
  - cmocean       # Oceanography colormaps
  - cartopy
  - cftime
