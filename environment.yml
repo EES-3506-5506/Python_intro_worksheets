@@ -22,7 +22,7 @@ channels:
 ## conda-forge channel
 
 dependencies:
- - python=3.9    # Python version 3.9
+ - python    # Python version 3.9
  - cmocean       # Oceanography colormaps
  - cartopy
  - cftime
@@ -62,6 +62,7 @@ dependencies:
  - cf_xarray
  - xgcm=0.8.1
  - msys2::m2-base ## alows usage of Unix-based commands with Anaconda on Window
+ - mamba
  - pip:
    - momlevel
    - cmip-basins
