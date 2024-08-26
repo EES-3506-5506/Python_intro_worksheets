@@ -1,6 +1,6 @@
 %conda update -n base -c conda-forge --all
 
-name: example-environment
+# name: example-environment
 channels:
   - conda-forge
 dependencies:
